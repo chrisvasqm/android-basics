@@ -5,4 +5,4 @@ Android Basics: User Input course by Udacity recreated using the Kotlin programm
 
 ## Screenshots
 
-<img src="https://github.com/chrisvasqm/udacity-score-keeper/blob/master/screenshots/main_screen.gif" alt="Main screen" width="250" />
+<img src="screenshots/main_screen.gif" alt="Main screen" width="250" />
