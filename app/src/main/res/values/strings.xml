@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">AndroidBasics</string>
+    <string name="app_name">Random Restaurant</string>
+    <string name="location">Nowhere</string>
+    <string name="description">Super long description that will probably don\'t make any sense at
+        all since this is a fictional business that never existed</string>
+    <string name="restarant_tables">Restaurant tables</string>
+    <string name="place_icon">Place icon</string>
+    <string name="restaurant_image">Restaurant Image</string>
 </resources>
