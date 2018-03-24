@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidBasics</string>
+    <string name="wrong">Wrong</string>
+    <string name="correct">Correct</string>
+    <string name="how_many_constructors_can_a_class_have">How many constructors can a class have?</string>
+    <string name="only_one">Only one</string>
+    <string name="any_amount">Any amount</string>
+    <string name="none">None</string>
+    <string name="next">Next</string>
 </resources>
