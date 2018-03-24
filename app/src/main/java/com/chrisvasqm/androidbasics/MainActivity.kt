@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         btnPlusOneB.setOnClickListener { plusOnePoints(scoreTeamB) }
         btnPlusTwoB.setOnClickListener { plusTwoPoints(scoreTeamB) }
         btnPlusThreeB.setOnClickListener { plusThreePoints(scoreTeamB) }
+
+        btnReset.setOnClickListener { resetScores() }
     }
 
     private fun plusOnePoints(textView: TextView) {
@@ -35,5 +37,9 @@ class MainActivity : AppCompatActivity() {
         textView.text = score.toString()
     }
 
+    private fun resetScores() {
+        scoreTeamA.text = "0"
+        scoreTeamB.text = "0"
+    }
 
 }
