@@ -12,12 +12,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnPlusOneA.setOnClickListener { plusOnePoints(scoreTeamA) }
+        btnPlusTwoA.setOnClickListener { plusTwoPoints(scoreTeamA) }
 
         btnPlusOneB.setOnClickListener { plusOnePoints(scoreTeamB) }
+        btnPlusTwoB.setOnClickListener { plusTwoPoints(scoreTeamB) }
     }
 
     private fun plusOnePoints(textView: TextView) {
         val score = textView.text.toString().toInt() + 1
+        textView.text = score.toString()
+    }
+
+    private fun plusTwoPoints(textView: TextView) {
+        val score = textView.text.toString().toInt() + 2
         textView.text = score.toString()
     }
 
