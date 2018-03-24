@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidBasics</string>
+    <string name="app_name">Score Keeper</string>
     <string name="reset">Reset</string>
     <string name="team_b">Team B</string>
     <string name="score">Score</string>
