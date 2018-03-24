@@ -13,9 +13,11 @@ class MainActivity : AppCompatActivity() {
 
         btnPlusOneA.setOnClickListener { plusOnePoints(scoreTeamA) }
         btnPlusTwoA.setOnClickListener { plusTwoPoints(scoreTeamA) }
+        btnPlusThreeA.setOnClickListener { plusThreePoints(scoreTeamA) }
 
         btnPlusOneB.setOnClickListener { plusOnePoints(scoreTeamB) }
         btnPlusTwoB.setOnClickListener { plusTwoPoints(scoreTeamB) }
+        btnPlusThreeB.setOnClickListener { plusThreePoints(scoreTeamB) }
     }
 
     private fun plusOnePoints(textView: TextView) {
@@ -27,5 +29,11 @@ class MainActivity : AppCompatActivity() {
         val score = textView.text.toString().toInt() + 2
         textView.text = score.toString()
     }
+
+    private fun plusThreePoints(textView: TextView) {
+        val score = textView.text.toString().toInt() + 3
+        textView.text = score.toString()
+    }
+
 
 }
