@@ -7,4 +7,10 @@
     <string name="any_amount">Any amount</string>
     <string name="none">None</string>
     <string name="next">Next</string>
+    <string name="which_are_the_main_pillars_of_oop">Which are the main pillars of OOP</string>
+    <string name="encapsulation">Encapsulation</string>
+    <string name="polymorphism">Polymorphism</string>
+    <string name="inheritance">Inheritance</string>
+    <string name="abstraction">Abstraction</string>
+    <string name="previous">Previous</string>
 </resources>
