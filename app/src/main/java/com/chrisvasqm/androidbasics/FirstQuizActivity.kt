@@ -3,6 +3,7 @@ package com.chrisvasqm.androidbasics
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_first_quiz.*
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 class FirstQuizActivity : AppCompatActivity() {
@@ -13,7 +14,12 @@ class FirstQuizActivity : AppCompatActivity() {
 
         btnNextFirst.setOnClickListener {
             checkAnswer()
+            showSecondQuiz()
         }
+    }
+
+    private fun showSecondQuiz() {
+        startActivity<SecondQuizActivity>()
     }
 
     private fun checkAnswer() {
