@@ -13,4 +13,7 @@
     <string name="inheritance">Inheritance</string>
     <string name="abstraction">Abstraction</string>
     <string name="previous">Previous</string>
+    <string name="who_s_the_author_of_the_quot_clean_code_quot_book">Who\'s the author of the Clean Code book?</string>
+    <string name="clean_code_author_name">Robert Martin</string>
+    <string name="author_name">Authro name</string>
 </resources>
