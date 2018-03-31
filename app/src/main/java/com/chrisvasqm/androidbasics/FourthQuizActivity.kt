@@ -12,7 +12,7 @@ class FourthQuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourth_quiz)
 
-        btnPreviousFourth.setOnClickListener { showThirdQuiz() }
+        btnPreviousFourth.setOnClickListener { finish() }
         btnSubmit.setOnClickListener {
             checkAnswer()
         }

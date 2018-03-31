@@ -12,7 +12,7 @@ class SecondQuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second_quiz)
 
-        btnPreviousSecond.setOnClickListener { showFirstQuiz() }
+        btnPreviousSecond.setOnClickListener { finish() }
         btnNextSecond.setOnClickListener {
             checkAnswer()
             showThirdQuiz()
