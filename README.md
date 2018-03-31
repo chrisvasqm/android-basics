@@ -1,18 +1,9 @@
-# Android Basics Exercises
+# Coding Quizzes
 
-Here you will find all the exercises that are part of Udacity's Android Basics courses that you can 
-do for free. https://www.udacity.com/courses/all.
+This app asks 4 quizzes to the user about coding, the user may navigate from quiz to quiz by using 
+the `Previous` and `Next` buttons to try any of the quizzes as he/she wishes, this is part of the 
+Android Basics: User Input course by Udacity recreated using the Kotlin programming language.
 
-## Checking out each project
+# Screenshots
 
-In case you find the `master` branch to be "empty", it's because each project will be on a separate 
-branch.
-
-## Courses
-
-- [User Interfaces](https://www.udacity.com/course/android-basics-user-interface--ud834)
-- [User Input](https://www.udacity.com/course/android-basics-user-input--ud836)
-- [Multiscreen Apps](https://www.udacity.com/course/android-basics-multiscreen-apps--ud839)
-- [Networking](https://www.udacity.com/course/android-basics-networking--ud843)
-- [Data Storage](https://www.udacity.com/course/android-basics-data-storage--ud845)
-
+<img src="screen/coding_quizzes.gif" alt="All the quizzes" width="250" />
