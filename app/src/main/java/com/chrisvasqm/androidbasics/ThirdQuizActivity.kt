@@ -15,6 +15,7 @@ class ThirdQuizActivity : AppCompatActivity() {
         btnPreviousThird.setOnClickListener { showSecondQuiz() }
         btnNextThird.setOnClickListener {
             checkAnswer()
+            showFourthQuiz()
         }
     }
 
@@ -27,6 +28,10 @@ class ThirdQuizActivity : AppCompatActivity() {
             toast(R.string.correct)
         else
             toast(R.string.wrong)
+    }
+
+    private fun showFourthQuiz() {
+        startActivity<FourthQuizActivity>()
     }
 
 }

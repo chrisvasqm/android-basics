@@ -16,4 +16,8 @@
     <string name="who_s_the_author_of_the_quot_clean_code_quot_book">Who\'s the author of the Clean Code book?</string>
     <string name="clean_code_author_name">Robert Martin</string>
     <string name="author_name">Authro name</string>
+    <string name="who_was_the_android_os_named_after">Who was the Android OS named after?</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="founder_android">Andy Rubin</string>
 </resources>
