@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidBasics</string>
+    <string name="book_name">Book name</string>
 </resources>
