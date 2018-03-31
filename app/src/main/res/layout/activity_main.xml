@@ -21,7 +21,7 @@
             android:id="@+id/editSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/book_name" />
+            android:hint="@string/hint_search" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
