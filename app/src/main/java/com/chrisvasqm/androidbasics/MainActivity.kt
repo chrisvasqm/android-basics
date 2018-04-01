@@ -2,6 +2,7 @@ package com.chrisvasqm.androidbasics
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import android.widget.Toast
 import com.chrisvasqm.androidbasics.adapter.BookAdapter
 import com.chrisvasqm.androidbasics.model.BookData
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         listView.emptyView = emptyState
 
         btnSearch.setOnClickListener {
+            emptyState.visibility = View.GONE
+            progressBar.visibility = View.VISIBLE
+
             val query = editSearch.text.toString()
             searchFor(query)
         }
@@ -40,6 +44,8 @@ class MainActivity : AppCompatActivity() {
                 val books = volumes?.map { it.volumeInfo }
                 val adapter = books?.let { BookAdapter(applicationContext, it) }
                 listView.adapter = adapter
+
+                progressBar.visibility = View.GONE
             }
 
             override fun onFailure(call: Call<BookData>?, t: Throwable?) {
