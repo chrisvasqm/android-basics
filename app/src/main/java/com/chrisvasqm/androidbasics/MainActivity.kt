@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        listView.emptyView = emptyState
 
         btnSearch.setOnClickListener {
             val query = editSearch.text.toString()
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun searchFor(query: String) {
         val service = retrofit.create(BookService::class.java)
-        val call = service.getBookByQuery(query, 50)
+        val call = service.getBookByQuery(query)
 
         call.enqueue(object : Callback<BookData> {
             override fun onResponse(call: Call<BookData>?, response: Response<BookData>?) {

@@ -3,4 +3,5 @@
     <string name="hint_search">Book title</string>
     <string name="author">Author</string>
     <string name="book_title">Book Title</string>
+    <string name="no_books_to_be_shown">No books to be shown</string>
 </resources>
