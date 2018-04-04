@@ -3,6 +3,7 @@ package com.chrisvasqm.androidbasics
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
+import com.chrisvasqm.androidbasics.model.Score
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,35 +12,40 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnPlusOneA.setOnClickListener { plusOnePoints(scoreTeamA) }
-        btnPlusTwoA.setOnClickListener { plusTwoPoints(scoreTeamA) }
-        btnPlusThreeA.setOnClickListener { plusThreePoints(scoreTeamA) }
+        val scoreA = Score()
+        btnPlusOneA.setOnClickListener { increaseOnePoint(scoreA, textScoreTeamA) }
+        btnPlusTwoA.setOnClickListener { increaseTwoPoints(scoreA, textScoreTeamA) }
+        btnPlusThreeA.setOnClickListener { increaseThreePoints(scoreA, textScoreTeamA) }
 
-        btnPlusOneB.setOnClickListener { plusOnePoints(scoreTeamB) }
-        btnPlusTwoB.setOnClickListener { plusTwoPoints(scoreTeamB) }
-        btnPlusThreeB.setOnClickListener { plusThreePoints(scoreTeamB) }
+        val scoreB = Score()
+        btnPlusOneB.setOnClickListener { increaseOnePoint(scoreB, textScoreTeamB) }
+        btnPlusTwoB.setOnClickListener { increaseTwoPoints(scoreB, textScoreTeamB) }
+        btnPlusThreeB.setOnClickListener { increaseThreePoints(scoreB, textScoreTeamB) }
 
-        btnReset.setOnClickListener { resetScores() }
+        btnReset.setOnClickListener { resetScores(scoreA, scoreB) }
     }
 
-    private fun plusOnePoints(textView: TextView) {
-        val score = textView.text.toString().toInt() + 1
-        textView.text = score.toString()
+    private fun increaseOnePoint(score: Score, textView: TextView) {
+        score.increaseBy(1)
+        textView.text = score.points.toString()
     }
 
-    private fun plusTwoPoints(textView: TextView) {
-        val score = textView.text.toString().toInt() + 2
-        textView.text = score.toString()
+    private fun increaseTwoPoints(score: Score, textView: TextView) {
+        score.increaseBy(2)
+        textView.text = score.points.toString()
     }
 
-    private fun plusThreePoints(textView: TextView) {
-        val score = textView.text.toString().toInt() + 3
-        textView.text = score.toString()
+    private fun increaseThreePoints(score: Score, textView: TextView) {
+        score.increaseBy(3)
+        textView.text = score.points.toString()
     }
 
-    private fun resetScores() {
-        scoreTeamA.text = "0"
-        scoreTeamB.text = "0"
+    private fun resetScores(scoreA: Score, scoreB: Score) {
+        scoreA.reset()
+        textScoreTeamA.text = scoreA.points.toString()
+
+        scoreB.reset()
+        textScoreTeamB.text = scoreB.points.toString()
     }
 
 }

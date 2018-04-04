@@ -49,7 +49,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <TextView
-                    android:id="@+id/scoreTeamA"
+                    android:id="@+id/textScoreTeamA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -91,9 +91,9 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="32dp"
                     android:text="@string/plus_one"
-                    app:layout_constraintEnd_toEndOf="@+id/scoreTeamA"
-                    app:layout_constraintStart_toStartOf="@+id/scoreTeamA"
-                    app:layout_constraintTop_toBottomOf="@+id/scoreTeamA" />
+                    app:layout_constraintEnd_toEndOf="@+id/textScoreTeamA"
+                    app:layout_constraintStart_toStartOf="@+id/textScoreTeamA"
+                    app:layout_constraintTop_toBottomOf="@+id/textScoreTeamA" />
 
             </android.support.constraint.ConstraintLayout>
 
@@ -132,12 +132,12 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="32dp"
                     android:text="@string/plus_one"
-                    app:layout_constraintEnd_toEndOf="@+id/scoreTeamB"
-                    app:layout_constraintStart_toStartOf="@+id/scoreTeamB"
-                    app:layout_constraintTop_toBottomOf="@+id/scoreTeamB" />
+                    app:layout_constraintEnd_toEndOf="@+id/textScoreTeamB"
+                    app:layout_constraintStart_toStartOf="@+id/textScoreTeamB"
+                    app:layout_constraintTop_toBottomOf="@+id/textScoreTeamB" />
 
                 <TextView
-                    android:id="@+id/scoreTeamB"
+                    android:id="@+id/textScoreTeamB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
