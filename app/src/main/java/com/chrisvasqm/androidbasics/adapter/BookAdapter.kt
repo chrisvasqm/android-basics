@@ -17,7 +17,9 @@ class BookAdapter(context: Context, books: List<Book>)
 
         val book = getItem(position)
         rootView.textTitle.text = book.title
-        rootView.textAuthor.text = book.authors.first()
+        rootView.textAuthor.text =
+                if (book.authors?.first().isNullOrEmpty()) "Anonymous"
+                else book.authors?.first()
 
         return rootView
     }
