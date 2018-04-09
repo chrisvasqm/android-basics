@@ -29,26 +29,14 @@
     </PreferenceCategory>
     <PreferenceCategory android:title="Category 2">
 
-        <EditTextPreference
-            android:defaultValue="Default"
-            android:inputType="text"
-            android:key="@string/settings_text_key"
-            android:selectAllOnFocus="true"
-            android:title="@string/settings_title_text" />
-
-        <EditTextPreference
-            android:defaultValue="example@gmail.com"
-            android:inputType="textEmailAddress"
-            android:key="@string/settings_key_email"
-            android:selectAllOnFocus="true"
-            android:title="@string/settings_title_email" />
-        <EditTextPreference
-            android:defaultValue="1"
-            android:inputType="numberDecimal"
-            android:key="@string/settings_key_number"
-            android:selectAllOnFocus="true"
-            android:title="@string/settings_title_number" />
-
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_preference_1"
+            android:title="Check box preference" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_preference_1"
+            android:title="Switch preference" />
     </PreferenceCategory>
 
 </PreferenceScreen>
