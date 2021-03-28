@@ -15,7 +15,7 @@ class ThirdQuizActivity : AppCompatActivity() {
         binding = ActivityThirdQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnPreviousThird.setOnClickListener { finish() }
+        binding.btnPreviousThird.setOnClickListener { showSecondQuiz() }
         binding.btnNextThird.setOnClickListener {
             checkAnswer()
             showFourthQuiz()
