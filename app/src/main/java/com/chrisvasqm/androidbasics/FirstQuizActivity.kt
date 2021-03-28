@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.chrisvasqm.androidbasics.databinding.ActivityFirstQuizBinding
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 class FirstQuizActivity : AppCompatActivity() {
@@ -23,8 +24,7 @@ class FirstQuizActivity : AppCompatActivity() {
     }
 
     private fun showSecondQuiz() {
-        val intent = Intent(this, SecondQuizActivity::class.java)
-        startActivity(intent)
+        startActivity<SecondQuizActivity>()
     }
 
     private fun checkAnswer() {
