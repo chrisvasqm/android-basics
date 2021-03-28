@@ -2,20 +2,24 @@ package com.chrisvasqm.androidbasics
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.chrisvasqm.androidbasics.databinding.ActivityThirdQuizBinding
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 class ThirdQuizActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityThirdQuizBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_third_quiz)
+        binding = ActivityThirdQuizBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-//        btnPreviousThird.setOnClickListener { finish() }
-//        btnNextThird.setOnClickListener {
-//            checkAnswer()
-//            showFourthQuiz()
-//        }
+        binding.btnPreviousThird.setOnClickListener { finish() }
+        binding.btnNextThird.setOnClickListener {
+            checkAnswer()
+            showFourthQuiz()
+        }
     }
 
     private fun showSecondQuiz() {
@@ -23,10 +27,10 @@ class ThirdQuizActivity : AppCompatActivity() {
     }
 
     private fun checkAnswer() {
-//        if (editAuthorName.text.toString() == getString(R.string.clean_code_author_name))
-//            toast(R.string.correct)
-//        else
-//            toast(R.string.wrong)
+        if (binding.editAuthorName.text.toString() == getString(R.string.clean_code_author_name))
+            toast(R.string.correct)
+        else
+            toast(R.string.wrong)
     }
 
     private fun showFourthQuiz() {
